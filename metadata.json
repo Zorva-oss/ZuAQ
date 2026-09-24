@@ -1,0 +1,6 @@
+{
+  "name": "ZuAQ — AI-Powered E-Commerce Platform",
+  "description": "Explore trending lifestyle products, new varieties, and personalized recommendations curated just for your lifestyle with real-time AI styling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
