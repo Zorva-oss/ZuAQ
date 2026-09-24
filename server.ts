@@ -158,8 +158,9 @@ async function startServer() {
     app.use(vite.middlewares);
   }
 
-  app.listen(PORT, () => {
-    console.log(`ZuAQ server listening on port ${PORT}`);
+  const portNumber = Number(PORT) || 3000;
+  app.listen(portNumber, '0.0.0.0', () => {
+    console.log(`ZuAQ server listening on http://0.0.0.0:${portNumber}`);
   });
 }
 

@@ -211,6 +211,9 @@ export default function App() {
           })),
         }),
       });
+      if (!res.ok) {
+        throw new Error(`API returned ${res.status}`);
+      }
       const data = await res.json();
       if (data.personalizedReason) {
         setAiReasoning(data.personalizedReason);

@@ -95,6 +95,10 @@ export const AskZuAQModal: React.FC<AskZuAQModalProps> = ({
         }),
       });
 
+      if (!response.ok) {
+        throw new Error(`API returned ${response.status}`);
+      }
+
       const data = await response.json();
       const aiMessage: Message = {
         id: `ai-${Date.now()}`,
